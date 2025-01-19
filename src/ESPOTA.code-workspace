@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "D:/ESP32 pro/ESPOTA"
+		},
+		{
+			"name": "ESP_OTA",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

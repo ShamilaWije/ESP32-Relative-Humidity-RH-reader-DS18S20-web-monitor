@@ -1,0 +1,135 @@
+html {
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+h1 {
+    font-size: 1.8rem; 
+    color: white;
+}
+.topnav { 
+    overflow: hidden; 
+    background-color: #40c336;
+}
+body {  
+    margin: 0;
+}
+.content { 
+    padding: 50px;
+}
+.card-grid { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: grid; 
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card { 
+    background-color: white; 
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.card-title { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #034078
+}
+.RH { 
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000
+}
+.T_dry { 
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000
+}
+.T_wet { 
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000
+}
+.rhSetpoint { 
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000
+}
+
+
+.state {
+    font-size: 1.2rem;
+    color:#1282A2;
+}
+.switch {
+    position: relative; 
+    display: inline-block; 
+    width: 120px; 
+    height: 68px
+} 
+.switch input {
+    display: none
+}
+.slider {
+    position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0; 
+    background-color: #ccc; 
+    border-radius: 50px
+}
+.slider:before {
+    position: absolute; 
+    content: ""; 
+    height: 52px; 
+    width: 52px; 
+    left: 8px; 
+    bottom: 8px; 
+    background-color: #fff; 
+    -webkit-transition: .4s; 
+    transition: .4s;
+    border-radius: 50px;
+}
+/* Button Styles */
+.red-button, .yellow-button, .green-button {
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 5px;
+  }
+  .red-button {
+    background-color: #dc2323; /* Yellow for yellow-button */
+  }
+  .yellow-button {
+    background-color: #FFD700; /* Yellow for yellow-button */
+  }
+  
+  .green-button {
+    background-color: #008000; /* Green for green-button */
+  }
+  
+  /* Button Hover Effect */
+  .red-button:hover, .yellow-button:hover, .green-button:hover {
+    background-color: #2e6c98; /* Darker red for red-button */
+    color: white;
+  }
+  
+
+input:checked+.slider {
+    background-color: #b30000;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px); 
+    transform: translateX(52px);
+}
+.relay-state {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #000000;
+ }

@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE HTML><html>
+<head>
+  <title>ESP IOT DASHBOARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon"  type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="topnav">
+    <h1>ESP WEB SERVER - Relative Humidity Controller</h1>
+  </div>
+  <div class="content">
+    <div class="card-grid">
+        <div class="card">             
+            <p class="card-title"><i class="fas fa-lightbulb"></i> GPIO 2</p>
+            <label class="switch">
+                <input type="checkbox" onchange="toggleCheckbox(this)" id="2">
+                <span class="slider"></span>
+            </label>
+            <p class ="state">State: <span id="2s"></span></p>
+        </div>
+        <div class="card"><b>
+            <p class="card-title"><i class="fas fa-humanity-half"></i>  RH</p>
+            <p class="RH" id="RH">Loading...</p></b>
+        </div>
+        <div class="card"><b>
+            <p class="card-title"><i class="fas fa-thermometer-half"></i> T_dry</p>
+            <p class="T_dry" id="T_dry">Loading...</p></b>
+        </div>
+        <div class="card"><b>
+            <p class="card-title"><i class="fas fa-thermometer-half"></i> T_wet</p>
+            <p class="T_wet" id="T_wet">Loading...</p></b>
+        </div>
+        <div class="card"><b>
+            <p class="card-title"><i class="fas fa-thermometer-half"></i> rhSetpoint</p>
+            <p class="rhSetpoint" id="rhSetpoint">Loading...</p></b>
+        </div></b>
+        
+                
+    </div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>-->
+
+
+ <!DOCTYPE HTML>
+ <html>
+ <head>
+   <title>ESP IOT DASHBOARD</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" type="image/png" href="favicon.png">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <style>
+     /* Add CSS styles for the buttons to match the existing cards */
+     
+   </style>
+ </head>
+ <body>
+   <div class="topnav">
+     <h1>ESP WEB SERVER - Relative Humidity Controller</h1>
+   </div>
+   <div class="content">
+     <div class="card-grid">
+       
+       <div class="card">
+         <p class="card-title"><i class="fas fa-humanity-half"></i>  RH</p>
+         <p class="RH" id="RH">Loading...</p>
+       </div>
+       <div class="card">
+        <p class="card-title"><i class="fas fa-thermometer-half"></i> rhSetpoint</p>
+        <p class="rhSetpoint" id="rhSetpoint">Loading...</p>
+      </div>
+       <div class="card">
+         <p class="card-title"><i class="fas fa-thermometer-half"></i> T_dry</p>
+         <p class="T_dry" id="T_dry">Loading...</p>
+       </div>
+       <div class="card">
+         <p class="card-title"><i class="fas fa-thermometer-half"></i> T_wet</p>
+         <p class="T_wet" id="T_wet">Loading...</p>
+       </div>
+       
+       <div class="card">
+        <p class="card-title"><i class="fas fa-lightbulb"></i> GPIO 2</p>
+        <label class="switch">
+          <input type="checkbox" onchange="toggleCheckbox(this)" id="2">
+          <span class="slider"></span>
+        </label>
+        <p class="state">State: <span id="2s"></span></p>
+      </div>
+      <div class="card">
+        <p class="card-title"><i class="fas fa-lightbulb"></i> Relay</p>
+        <p class="relay-state" id="relay-state">Loading...</p>
+     </div>
+       <div class="card">
+         <button class="red-button" id="BR1" onclick="BPR1()">Red Button</button>
+         <button class="yellow-button" id="BY1" onclick="BPY1()">Yellow Button 1</button>
+         <button class="yellow-button" id="BY2" onclick="BPY2()">Yellow Button 2</button>
+         <button class="green-button" id="BG1" onclick="BPG1()">Green Button</button>
+       </div>
+     </div>
+   </div>
+   <script src="/script.js"></script>
+ </body>
+ </html>
+ 
